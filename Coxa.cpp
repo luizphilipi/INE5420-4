@@ -18,6 +18,7 @@ public:
 		glTranslatef(0, 0, 1.4);
 
 		glPushMatrix();
+		glColor3f(1, 0, 0);
 		glScalef(0.17, 0.17, 0.17);
 		glutSolidSphere(1, 30, 30);
 		glPopMatrix();
@@ -29,10 +30,10 @@ private:
 	{ -30, -35, -25, 15, 10, -10 }, /* TRÁS DIREITA */
 	{ 15, 10, -10, -30, -35, -25 }, /* TRÁS ESQUERDA */};
 
-	float angulosCorrendo[4][4] = { { 65, 30, -20, 20 }, /* FRENTE DIREITA */
-	{ -20, 20, 65, 30 }, /* FRENTE ESQUERDA */
-	{ -35, 15, -45, -55 }, /* TRÁS DIREITA */
-	{ -45, -55, -35, 15 } /* TRÁS ESQUERDA */};
+	float angulosCorrendo[4][8] = { { 65, 47.5, 30, 5, -20, 0, 20, 42.5 }, /* FRENTE DIREITA */
+	{ -20, 0, 20, 42.5, 65, 47.5, 30, 5 }, /* FRENTE ESQUERDA */
+	{ -35, -12.5, 15, -15, -45, -50, -55, -45 }, /* TRÁS DIREITA */
+	{ -45, -50, -55, -45, -35, -12.5, 15, -15 } /* TRÁS ESQUERDA */};
 
 };
 

@@ -20,7 +20,7 @@ public:
 
 	float angulosCaminhando[6] = { 35, 30, 25, 30, 35, 40 };
 
-	float angulosCorrendo[4] = { 45, 40, 35, 40 };
+	float angulosCorrendo[8] = { 45, 42.5, 40, 38.5, 35, 38.5, 40, 42.5 };
 
 };
 

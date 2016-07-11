@@ -19,9 +19,9 @@ public:
 			glRotatef(70, 0, 1, 0);
 		}
 
-		glTranslatef(0.1, 0, 0);
-
-		gluCylinder(gluNewQuadric(), 0.42, 0.18, 0.8, 30, 30);
+		glTranslatef(0.1, 0, 0.2);
+		glColor3f(1, 0, 0);
+		gluCylinder(gluNewQuadric(), 0.38, 0.18, 0.8, 30, 30);
 		glTranslatef(0, 0, 0.8);
 		glScalef(0.18, 0.18, 0.18);
 		glutSolidSphere(1, 20, 20);
