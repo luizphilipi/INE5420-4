@@ -22,7 +22,7 @@ private:
 public:
 	void desenhar(const bool caminhada, const int estagio) {
 		glPushMatrix();
-		glColor3f(0.72f, 0.65f, 0.13f);
+		glColor3f(0.855f, 0.784f, 0.682f);
 
 		double alturaTronco = 0;
 		double metadeTronco = COMPRIMENTO_TRONCO / (double) 2;
@@ -58,8 +58,11 @@ public:
 
 		glTranslatef(0, 0, -metadeNadegas * 0.9);
 		perna.desenhar(caminhada, estagio, 3);
+		glColor3f(0.855f, 0.784f, 0.682f);
+
 		glTranslatef(0, 0, LARGURA_NADEGAS * 0.9);
 		perna.desenhar(caminhada, estagio, 2);
+		glColor3f(0.855f, 0.784f, 0.682f);
 
 		glTranslatef(0, alturaTronco, 0);
 		glTranslatef(COMPRIMENTO_TRONCO * 0.8, 0, -metadeNadegas * 0.9);
@@ -69,8 +72,12 @@ public:
 
 		glTranslatef(0, 0, -metadeNadegas * 0.9);
 		perna.desenhar(caminhada, estagio, 1);
+		glColor3f(0.855f, 0.784f, 0.682f);
+
 		glTranslatef(0, 0, LARGURA_NADEGAS * 0.9);
 		perna.desenhar(caminhada, estagio, 0);
+		glColor3f(0.855f, 0.784f, 0.682f);
+
 		glTranslatef(0, 0, -metadeNadegas * 0.9);
 
 		glTranslatef(0, alturaTronco, 0);

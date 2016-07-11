@@ -50,7 +50,7 @@ void redesenharMundo() {
 
 	desenharChao();
 
-	glTranslatef(0, 0, -10);
+	glTranslatef(0, 0, -8);
 	glRotatef(anguloModelo, 0.0f, 1.0f, 0.0f);
 
 	Corpo cavalo;
@@ -59,7 +59,7 @@ void redesenharMundo() {
 	// Trocar o buffer da memória para ser desenhado
 	glutSwapBuffers();
 
-	usleep(100000);
+	usleep(150000);
 
 	estagioAtual++;
 	estagioAtual = estagioAtual % quantEstagios;
