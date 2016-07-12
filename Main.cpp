@@ -107,7 +107,6 @@ void tecla(unsigned char tecla, int x, int y) {
 		if (delay < 500000) {
 			delay += 10000;
 		}
-		std::cout << "MENOS" << std::endl;
 		break;
 	default:
 		break;
