@@ -9,6 +9,8 @@ int janela;
 unsigned int larguraJanela = 800;
 unsigned int alturaJanela = 600;
 
+int delay = 150000;
+
 bool modoCaminhada = true;
 double anguloModelo = 0;
 int estagioAtual = 0;
@@ -50,7 +52,7 @@ void redesenharMundo() {
 
 	glutSwapBuffers();
 
-	usleep(150000);
+	usleep(delay);
 
 	estagioAtual++;
 	estagioAtual = estagioAtual % quantEstagios;
@@ -95,6 +97,17 @@ void tecla(unsigned char tecla, int x, int y) {
 			quantEstagios = 6;
 		}
 		modoCaminhada = !modoCaminhada;
+		break;
+	case 43:
+		if (delay > 10000) {
+			delay -= 10000;
+		}
+		break;
+	case 45:
+		if (delay < 500000) {
+			delay += 10000;
+		}
+		std::cout << "MENOS" << std::endl;
 		break;
 	default:
 		break;

@@ -29,8 +29,8 @@ private:
 	{ 30, 20, 65, 45, 25, 30 }, /* TRÁS DIREITA */
 	{ 45, 25, 30, 30, 20, 65 } /* TRÁS ESQUERDA */};
 
-	float angulosCorrendo[4][8] = { { -45, -22.5, 0, 0, 0, -40, -80, -62.5 }, /* FRENTE DIREITA */
-	{ 0, 0, -80, -62.5, -45, -22.5, 0, 0 }, /* FRENTE ESQUERDA */
+	float angulosCorrendo[4][8] = { { -22.5, 0, 0, 0, -40, -80, -62.5, -45 }, /* FRENTE DIREITA */
+	{ -4, -80, -62.5, -45, -22.5, 0, 0, 0 }, /* FRENTE ESQUERDA */
 	{ 80, 62.5, 45, 37.5, 30, 45, 60, 70 }, /* TRÁS DIREITA */
 	{ 30, 45, 60, 70, 80, 62.5, 45, 37.5 } /* TRÁS ESQUERDA */};
 

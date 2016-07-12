@@ -44,19 +44,6 @@ public:
 		glScalef(1.2, 1.1, LARGURA_NADEGAS);
 		glutSolidSphere(1, 20, 20);
 
-		// Rabo
-//		glPushMatrix();
-//		glColor3f(0, 0, 0);
-//		glTranslatef(-1, 0, 0);
-//		glRotatef(-90, 0, 1, 0);
-//		if (caminhada) {
-//			glRotatef(65, 1, 0, 0);
-//		} else {
-//			glRotatef(45, 1, 0, 0);
-//		}
-//		gluCylinder(gluNewQuadric(), 0.01, 0.01, 1, 30, 30);
-//		glPopMatrix();
-
 		glTranslatef(0, -alturaTronco, 0);
 
 		glTranslatef(0, 0, -metadeNadegas * 0.9);

@@ -12,11 +12,17 @@ public:
 		glutSolidSphere(1, 20, 20);
 		glPopMatrix();
 
+		// chifre
+		glPushMatrix();
+		glColor3f(0.651, 0.165, 0.165);
+		gluCylinder(gluNewQuadric(), 0.1, 0, 0.8, 30, 30);
+		glPopMatrix();
+
 		// fucinho
 		if (caminhada) {
 			glRotatef(110, 0, 1, 0);
 		} else {
-			glRotatef(70, 0, 1, 0);
+			glRotatef(80, 0, 1, 0);
 		}
 
 		glTranslatef(0.1, 0, 0.2);
